@@ -200,15 +200,12 @@
           async src="//gc.zgo.at/count.js"></script>
 
   <script>
-        var t = setInterval(function() {
-            if (window.goatcounter && window.goatcounter.visit_count) {
-                clearInterval(t)
-                window.goatcounter.visit_count({
-                    append: '#goatcounter-views',
-                    type: 'html'
-                })
-            }
-        }, 100)
+    var t = setInterval(function() {
+        if (window.goatcounter && window.goatcounter.visit_count) {
+            clearInterval(t)
+            window.goatcounter.visit_count({append: 'goatcounter-views'})
+        }
+    }, 100)
   </script>
 
 
