@@ -2,27 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <script data-goatcounter="https://oflynnj.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Personal portfolio and resume site for Jaxon O'Flynn, a Data Science student.">
   <title>Jaxon O'Flynn — Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <script>
-    var t = setInterval(function() {
-        if (window.goatcounter && window.goatcounter.visit_count) {
-            clearInterval(t)
-            window.goatcounter.visit_count({append: 'body'})
-        }
-    }, 100)
-  </script>
-  <script data-goatcounter="https://oflynnj.goatcounter.com/count"
-          async src="//gc.zgo.at/count.js"></script>
-
-
-
   <!-- Skip link for keyboard/screen-reader users -- an accessibility practice -->
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
@@ -206,8 +191,26 @@
   <footer class="site-footer">
     <div class="container">
       <p>&copy; 2026 Jaxon O'Flynn. Built with HTML &amp; CSS, hosted on GitHub Pages.</p>
+
+      <p id="goatcounter-views"></p>
     </div>
   </footer>
+
+  <script data-goatcounter="https://oflynnj.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+
+  <script>
+        var t = setInterval(function() {
+            if (window.goatcounter && window.goatcounter.visit_count) {
+                clearInterval(t)
+                window.goatcounter.visit_count({
+                    append: '#goatcounter-views',
+                    type: 'html'
+                })
+            }
+        }, 100)
+  </script>
+
 
 </body>
 </html>
