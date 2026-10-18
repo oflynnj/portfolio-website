@@ -10,6 +10,18 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <script>
+    var t = setInterval(function() {
+        if (window.goatcounter && window.goatcounter.visit_count) {
+            clearInterval(t)
+            window.goatcounter.visit_count({append: 'body'})
+        }
+    }, 100)
+  </script>
+  <script data-goatcounter="https://oflynnj.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+
+
 
   <!-- Skip link for keyboard/screen-reader users -- an accessibility practice -->
   <a class="skip-link" href="#main-content">Skip to main content</a>
